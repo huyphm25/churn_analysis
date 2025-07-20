@@ -1,0 +1,27 @@
+# .readthedocs.yml
+version: 2
+
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.13"
+
+# Tell RTD to use the Sphinx config in docs/source/
+sphinx:
+  configuration: docs/source/conf.py
+
+# Use Poetry for dependencies (preferred for reproducibility)
+# RTD will auto-install, using pyproject.toml and poetry.lock at repo root.
+python:
+  install:
+    - method: poetry
+
+# If you need extra system packages (like libxml2, pandoc, etc), uncomment below:
+# apt_packages:
+#   - libxml2-dev
+#   - pandoc
+
+# (Optional) Set build.environment variables if needed (for data science, some need this)
+# environment:
+#   # Uncomment and edit as needed, e.g.:
+#   # MPLBACKEND: "Agg"
