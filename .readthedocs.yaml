@@ -15,6 +15,7 @@ sphinx:
 python:
   install:
     - method: poetry
+    - path: .
 
 # If you need extra system packages (like libxml2, pandoc, etc), uncomment below:
 # apt_packages:
