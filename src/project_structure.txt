@@ -1,0 +1,204 @@
+churn_analysis
+├── .gitignore
+├── docs
+│   ├── build
+│   │   ├── doctrees
+│   │   │   ├── data.doctree
+│   │   │   ├── environment.pickle
+│   │   │   ├── index.doctree
+│   │   │   ├── modules.doctree
+│   │   │   └── notebook.doctree
+│   │   └── html
+│   │       ├── .buildinfo
+│   │       ├── data.html
+│   │       ├── genindex.html
+│   │       ├── index.html
+│   │       ├── modules.html
+│   │       ├── notebook.html
+│   │       ├── objects.inv
+│   │       ├── search.html
+│   │       ├── searchindex.js
+│   │       ├── _sources
+│   │       │   ├── data.rst.txt
+│   │       │   ├── index.rst.txt
+│   │       │   ├── modules.rst.txt
+│   │       │   └── notebook.rst.txt
+│   │       └── _static
+│   │           ├── alabaster.css
+│   │           ├── basic.css
+│   │           ├── custom.css
+│   │           ├── doctools.js
+│   │           ├── documentation_options.js
+│   │           ├── file.png
+│   │           ├── github-banner.svg
+│   │           ├── language_data.js
+│   │           ├── minus.png
+│   │           ├── plus.png
+│   │           ├── pygments.css
+│   │           ├── searchtools.js
+│   │           └── sphinx_highlight.js
+│   ├── make.bat
+│   ├── Makefile
+│   └── source
+│       ├── conf.py
+│       ├── data.rst
+│       ├── index.rst
+│       ├── modules.rst
+│       ├── notebook.rst
+│       ├── _static
+│       └── _templates
+├── mlartifacts
+│   └── 502767127835434973
+│       ├── e615a0353cb2450b86fa83842799a95a
+│       │   └── artifacts
+│       │       ├── confusion_matrix.png
+│       │       └── roc_curve.png
+│       └── models
+│           └── m-ab86d1e357a54ad18a3dad4151ad4c0f
+│               └── artifacts
+│                   ├── conda.yaml
+│                   ├── input_example.json
+│                   ├── MLmodel
+│                   ├── model.pkl
+│                   ├── python_env.yaml
+│                   ├── requirements.txt
+│                   └── serving_input_example.json
+├── mlruns
+│   ├── .trash
+│   ├── 0
+│   │   └── meta.yaml
+│   ├── 502767127835434973
+│   │   ├── e615a0353cb2450b86fa83842799a95a
+│   │   │   ├── artifacts
+│   │   │   ├── meta.yaml
+│   │   │   ├── metrics
+│   │   │   │   ├── accuracy
+│   │   │   │   ├── f1_score
+│   │   │   │   ├── precision
+│   │   │   │   ├── recall
+│   │   │   │   └── roc_auc
+│   │   │   ├── outputs
+│   │   │   │   └── m-ab86d1e357a54ad18a3dad4151ad4c0f
+│   │   │   │       └── meta.yaml
+│   │   │   ├── params
+│   │   │   │   ├── base_score
+│   │   │   │   ├── booster
+│   │   │   │   ├── callbacks
+│   │   │   │   ├── colsample_bylevel
+│   │   │   │   ├── colsample_bynode
+│   │   │   │   ├── colsample_bytree
+│   │   │   │   ├── device
+│   │   │   │   ├── early_stopping_rounds
+│   │   │   │   ├── enable_categorical
+│   │   │   │   ├── eval_metric
+│   │   │   │   ├── feature_types
+│   │   │   │   ├── feature_weights
+│   │   │   │   ├── gamma
+│   │   │   │   ├── grow_policy
+│   │   │   │   ├── importance_type
+│   │   │   │   ├── interaction_constraints
+│   │   │   │   ├── learning_rate
+│   │   │   │   ├── max_bin
+│   │   │   │   ├── max_cat_threshold
+│   │   │   │   ├── max_cat_to_onehot
+│   │   │   │   ├── max_delta_step
+│   │   │   │   ├── max_depth
+│   │   │   │   ├── max_leaves
+│   │   │   │   ├── min_child_weight
+│   │   │   │   ├── missing
+│   │   │   │   ├── monotone_constraints
+│   │   │   │   ├── multi_strategy
+│   │   │   │   ├── num_parallel_tree
+│   │   │   │   ├── n_estimators
+│   │   │   │   ├── n_jobs
+│   │   │   │   ├── objective
+│   │   │   │   ├── random_state
+│   │   │   │   ├── reg_alpha
+│   │   │   │   ├── reg_lambda
+│   │   │   │   ├── sampling_method
+│   │   │   │   ├── scale_pos_weight
+│   │   │   │   ├── subsample
+│   │   │   │   ├── tree_method
+│   │   │   │   ├── validate_parameters
+│   │   │   │   └── verbosity
+│   │   │   └── tags
+│   │   │       ├── author
+│   │   │       ├── mlflow.runName
+│   │   │       ├── mlflow.source.name
+│   │   │       ├── mlflow.source.type
+│   │   │       ├── mlflow.user
+│   │   │       ├── model_type
+│   │   │       └── purpose
+│   │   ├── meta.yaml
+│   │   └── models
+│   │       └── m-ab86d1e357a54ad18a3dad4151ad4c0f
+│   │           ├── meta.yaml
+│   │           ├── metrics
+│   │           │   ├── accuracy
+│   │           │   ├── f1_score
+│   │           │   ├── precision
+│   │           │   ├── recall
+│   │           │   └── roc_auc
+│   │           ├── params
+│   │           │   ├── base_score
+│   │           │   ├── booster
+│   │           │   ├── callbacks
+│   │           │   ├── colsample_bylevel
+│   │           │   ├── colsample_bynode
+│   │           │   ├── colsample_bytree
+│   │           │   ├── device
+│   │           │   ├── early_stopping_rounds
+│   │           │   ├── enable_categorical
+│   │           │   ├── eval_metric
+│   │           │   ├── feature_types
+│   │           │   ├── feature_weights
+│   │           │   ├── gamma
+│   │           │   ├── grow_policy
+│   │           │   ├── importance_type
+│   │           │   ├── interaction_constraints
+│   │           │   ├── learning_rate
+│   │           │   ├── max_bin
+│   │           │   ├── max_cat_threshold
+│   │           │   ├── max_cat_to_onehot
+│   │           │   ├── max_delta_step
+│   │           │   ├── max_depth
+│   │           │   ├── max_leaves
+│   │           │   ├── min_child_weight
+│   │           │   ├── missing
+│   │           │   ├── monotone_constraints
+│   │           │   ├── multi_strategy
+│   │           │   ├── num_parallel_tree
+│   │           │   ├── n_estimators
+│   │           │   ├── n_jobs
+│   │           │   ├── objective
+│   │           │   ├── random_state
+│   │           │   ├── reg_alpha
+│   │           │   ├── reg_lambda
+│   │           │   ├── sampling_method
+│   │           │   ├── scale_pos_weight
+│   │           │   ├── subsample
+│   │           │   ├── tree_method
+│   │           │   ├── validate_parameters
+│   │           │   └── verbosity
+│   │           └── tags
+│   │               ├── mlflow.modelVersions
+│   │               ├── mlflow.source.name
+│   │               ├── mlflow.source.type
+│   │               └── mlflow.user
+│   └── models
+│       └── Churn-XGBClassifier
+│           ├── meta.yaml
+│           └── version-1
+│               └── meta.yaml
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+├── src
+│   ├── confusion_matrix.png
+│   ├── E Commerce Dataset.xlsx
+│   ├── e-commerce-customer-churn-end-to-end-ml-project.ipynb
+│   ├── notebook.ipynb
+│   ├── roc_curve.png
+│   └── __init__.py
+└── tests
+    └── __init__.py
