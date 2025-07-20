@@ -20,14 +20,6 @@ build:
 sphinx:
   configuration: docs/source/conf.py
 
-# Use Poetry for dependencies (preferred for reproducibility)
-# RTD will auto-install, using pyproject.toml and poetry.lock at repo root.
-python:
-  install:
-    - method: poetry
-    - path: .
-    - requirements: .
-
 # If you need extra system packages (like libxml2, pandoc, etc), uncomment below:
 # apt_packages:
 #   - libxml2-dev
